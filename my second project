@@ -1,0 +1,33 @@
+Map filter and reduce 
+# def cube(x):
+#     return x*x*x
+
+# print(cube(2))
+
+# l = [1, 2, 4, 6, 4, 3]
+# # # newl = []
+# # # for item in l:
+# # #     newl.append(cube(item))
+
+# # l = list(map(cube, l))
+# # print(l)
+# def filter_function(a):
+#     return a>2
+# newnewl = filter(filter_function, l)
+# print(list(newnewl))
+# s = 23.3
+# d = float(2.3)
+# print(type(s))
+# c= "asd"
+# print(c.upper())
+# h = (23)
+# print(type(h))
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5]
+def my_sum(x, y):
+    return x + y
+
+
+sum = reduce(my_sum, numbers)
+print(sum)
